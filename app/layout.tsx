@@ -1,20 +1,16 @@
-import type { Metadata } from "next";
 import "./globals.css";
+
 import { Footer, Navbar } from "@/components";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Carz",
-  description: "Explore the world of cars",
+  description: "Eplore the world of cars",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="relative">
+    <html lang='en'>
+      <body className='relative'>
         <Navbar />
         {children}
         <Footer />

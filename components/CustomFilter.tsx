@@ -3,10 +3,10 @@
 import { Fragment, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { Listbox, Transition } from "@/headlessui/react";
+import { Listbox, Transition } from "@headlessui/react";
 
-import { CustomFilterProps } from "@/types";
-import { updateSearchParams } from "@/utils";
+import { CustomFilterProps } from "@types";
+import { updateSearchParams } from "@utils";
 
 export default function CustomFilter({ title, options }: CustomFilterProps) {
     const router = useRouter();
@@ -14,7 +14,6 @@ export default function CustomFilter({ title, options }: CustomFilterProps) {
 
     const handleUpdateParams = (e: { title: string; value: string }) => {
         const newPathName = updateSearchParams(title, e.value.toLowerCase());
-
         router.push(newPathName);
     };
 
@@ -28,7 +27,7 @@ export default function CustomFilter({ title, options }: CustomFilterProps) {
                 }}
             >
                 <div className='relative w-fit z-10'>
-                    <Listbox.Button className='custom-filter__btn'></Listbox.Button>
+                    <Listbox.Button className='custom-filter__btn'>
                         <span className='block truncate'>{selected.title}</span>
                         <Image src='/chevron-up-down.svg' width={20} height={20} className='ml-4 object-contain' alt='chevron_up-down' />
                     </Listbox.Button>

@@ -1,6 +1,7 @@
 import "./globals.css";
 
-import { Footer, Navbar } from "@/components";
+import {Footer} from "@/components";
+import {NavBar} from "@/components";
 
 export const metadata = {
   title: "Carz",
@@ -11,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en'>
       <body className='relative'>
-        <Navbar />
+        <NavBar />
         {children}
         <Footer />
       </body>

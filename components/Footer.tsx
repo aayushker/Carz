@@ -6,9 +6,10 @@ const Footer = () => (
   <footer className='flex flex-col text-black-100  mt-5 border-t border-gray-100'>
     <div className='flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10'>
       <div className='flex flex-col justify-start items-start gap-6'>
-        <Image src='/logo.svg' alt='logo' width={118} height={18} className='object-contain' />
+        {/* <Image src='/logo.svg' alt='logo' width={118} height={18} className='object-contain' /> */}
+        <iframe src="https://lottie.host/embed/940586b1-a2d0-4db1-93ef-1616ed6fc17c/J3SOXEApqF.json"></iframe>
         <p className='text-base text-gray-700'>
-          Carz 2023 <br />
+          Carz 2024 <br />
           All Rights Reserved &copy;
         </p>
       </div>
@@ -34,7 +35,7 @@ const Footer = () => (
     </div>
 
     <div className='flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10'>
-      <p>@2023 Carz. All rights reserved</p>
+      <p>@2024 Carz. All rights reserved</p>
 
       <div className="footer__copyrights-link">
         <Link href="/" className="text-gray-500">

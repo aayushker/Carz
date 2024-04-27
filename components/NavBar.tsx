@@ -1,21 +1,28 @@
 import Link from "next/link";
 import Image from "next/image";
-import { CustomButton } from ".";
-import { headers } from "next/headers";
 
-const NavBar = () => {
-  return (
-    <header className="w-full absolute z-10">
-        <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4 ">
-            <Link href="/" className="flex justify-center items-center">
-                <Image src="/logo.svg" alt="logo" width={118} height={18} className="object-contain "/>
-            </Link>
+import CustomButton from "./CustomButton";
 
-            <CustomButton title="Sign In" btnType = "button" containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"/>
-        </nav>
+const NavBar = () => (
+  <header className='w-full  absolute z-10'>
+    <nav className='max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4 bg-transparent'>
+      <Link href='/' className='flex justify-center items-center'>
+        <Image
+          src='/logo.svg'
+          alt='logo'
+          width={118}
+          height={18}
+          className='object-contain'
+        />
+      </Link>
 
-    </header>
-  )
-}
+      <CustomButton
+        title='Sign in'
+        btnType='button'
+        containerStyles='bg-primary-blue text-white rounded-full mt-10'
+      />
+    </nav>
+  </header>
+);
 
 export default NavBar;

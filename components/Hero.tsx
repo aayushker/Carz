@@ -26,7 +26,10 @@ const Hero = () => {
 
       <div className="hero__image-container">
         <div className="hero__image">
-          <Image src="/hero.png" alt="hero image" fill className="object-contain" />     
+          <Image src="/hero.png" alt="hero image" fill className="object-contain" />    
+          {/* <Image src="https://lottie.host/940586b1-a2d0-4db1-93ef-1616ed6fc17c/J3SOXEApqF.json" alt="hero image" fill className="object-contain" />      */}
+          {/* <Image src="https://lottie.host/embed/940586b1-a2d0-4db1-93ef-1616ed6fc17c/J3SOXEApqF.json" alt="hero image" fill className="object-contain" />      */}
+          
         </div>
           <div className="hero__image-overlay"></div>
    

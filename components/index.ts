@@ -6,6 +6,7 @@ import NavBar from "./NavBar";
 import ShowMore from "./ShowMore";
 import SearchBar from "./Searchbar";
 import Hero from "./Hero";
+import { BackgroundBeams } from "./ui/background-beams";
 
 export {
   Hero,
@@ -16,4 +17,5 @@ export {
   NavBar,
   ShowMore,
   SearchBar,
+  BackgroundBeams,
 };

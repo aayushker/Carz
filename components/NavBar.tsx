@@ -1,28 +1,38 @@
-import Link from "next/link";
-import Image from "next/image";
+import React from "react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import {AcmeLogo} from "./Logo";
 
-import CustomButton from "./CustomButton";
-
-const NavBar = () => (
-  <header className='w-full  absolute z-10'>
-    <nav className='max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4 bg-transparent'>
-      <Link href='/' className='flex justify-center items-center'>
-        <Image
-          src='/logo.svg'
-          alt='logo'
-          width={118}
-          height={18}
-          className='object-contain'
-        />
-      </Link>
-
-      <CustomButton
-        title='Sign in'
-        btnType='button'
-        containerStyles='bg-primary-blue text-white rounded-full mt-10'
-      />
-    </nav>
-  </header>
-);
-
-export default NavBar;
+export default function App() {
+  return (
+    <Navbar isBordered className=" text-gray-300 mb-0 pb-0">
+      <AcmeLogo />
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            Features
+          </Link>
+        </NavbarItem>
+        <NavbarItem isActive>
+          <Link href="#" aria-current="page">
+            Customers
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            Integrations
+          </Link>
+        </NavbarItem>
+      </NavbarContent>
+      <NavbarContent justify="end">
+        <NavbarItem className="hidden lg:flex">
+          <Link href="#">Login</Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Button as={Link} color="primary" href="#" variant="flat">
+            Sign Up
+          </Button>
+        </NavbarItem>
+      </NavbarContent>
+    </Navbar>
+  );
+}

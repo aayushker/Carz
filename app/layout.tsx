@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative bg-gray-800">
+      <body className="relative" style={{ backgroundColor: "#051525" }}>
         <NextUIProvider>
           <NavBar />
           {children}

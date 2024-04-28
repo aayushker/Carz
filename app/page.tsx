@@ -27,8 +27,8 @@ export default async function Home({ searchParams }: HomeProps) {
       <BackgroundBeams className=" -z-50"/>
       <div className="mt-12 padding-x padding-y max-width" id="discover">
         <div className="home__text-container">
-          <h1 className="text-4xl font-extrabold">Car Catalogue</h1>
-          <p>Explore out cars you might like</p>
+          <h1 className="text-4xl font-extrabold text-gray-100  ">Car Catalogue</h1>
+          <p className=" text-gray-300">Explore out cars you might like</p>
         </div>
 
         <div className="home__filters">

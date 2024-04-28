@@ -13,7 +13,7 @@ const Hero = () => {
           Find, book, or rent a car - all in one place!
         </h1>
 
-        <p className="hero__subtitle">
+        <p className="hero__subtitle text-cyan-10">
           Streamline your car rental process with our unique platform.
         </p>
 

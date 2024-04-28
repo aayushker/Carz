@@ -51,7 +51,7 @@
 }
 
 .hero__subtitle {
-  @apply text-[27px] text-black-100 font-light mt-5;
+  @apply text-[27px] font-light mt-5;
 }
 
 .hero__image-container {
